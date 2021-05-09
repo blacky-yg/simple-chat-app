@@ -1,0 +1,48 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "reset": "bin/reset",
+    "develop": "node bin/init && node bin/start",
+    "start": "nodemon bin/start --exec babel-node --",
+    "test": "mocha --require esm 'test/**/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "level": "^6.0.1",
+    "microtime": "^3.0.0",
+    "mixme": "^0.4.0",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6"
+  },
+  "mocha": {
+    "throw-deprecation": true,
+    "require": [
+      "should"
+    ],
+    "inline-diffs": true,
+    "timeout": 40000,
+    "reporter": "spec",
+    "recursive": true
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
