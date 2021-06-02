@@ -1,23 +1,40 @@
+# Simple Chat App
 
+## TECHNOLOGIES
 
-## Run le backend :
+> ReactJS
 
-### Lancement classique
+> NodeJS / ExpressJS
 
- - Faire un npm install dans back-end
- - node .bin/start
+> LevelDB
 
-### Population de la base de données
+## HOW TO RUN THE BACKEND
 
- - node .bin/init
- - node .bin/start
+Go into the `back-end` directory
+```
+$ npm install
+$ node bin/start
+```
 
-### Reset la bdd
+## HOW TO RUN THE FRONTEND
 
- - node .bin/reset
- - node .bin/start
+Go into the `front-end` directory
+```bash
+$ npm install
+$ node bin/start
+```
 
-## Run le front end
+## RESET THE DATABASE
 
- - Faire un npm install dans le front-end
- - npm start
+```bash
+$ node bin/reset
+$ node bin/start
+```
+
+---
+
+<div align="center">
+
+<a href="https://github.com/blacky-yg" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="github.com" width="30"></a>
+
+</div>
